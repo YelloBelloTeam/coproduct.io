@@ -1,6 +1,6 @@
 ---
 // Component Imports
-import Tour from '../components/Tour.astro';
+//import Tour from '../components/Tour.astro';
 // You can import components from any supported Framework here!
 import SvelteCounter from '../components/SvelteCounter.svelte';
 
@@ -8,7 +8,7 @@ import SvelteCounter from '../components/SvelteCounter.svelte';
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
+let title = 'How are you?';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -31,6 +31,9 @@ let title = 'My Astro Site';
             gap: 1em;
             max-width: min(100%, 68ch);
         }
+        button {
+            border: 8px double white;
+        }
     </style>
 </head>
 <body>
@@ -38,11 +41,17 @@ let title = 'My Astro Site';
         <header>
             <div>
                 <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-                <h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+                <h1><a href="">How are you?</a></h1>
+                <ul>
+                  <li><a href="https://open.spotify.com/track/0DPKzksU9qfgExbtCoJhKZ?si=15852ac195c649d4">In plus: Fantastic Planet</a></li>
+                  <li><a href="https://open.spotify.com/track/0ykIoMN7s8cfAXEv2fs5o9?si=1bf3b5b03b9d4769">In minus: Temporary mood swings _ </a> 
+                    <a href="https://open.spotify.com/track/76Rcr2dx6DsPORncOuLDF5?si=23fb9a78042048e3">vagy más _ Sorry _ </a>
+                  </li>
+                </ul>
             </div>
         </header>
 
-        <Tour />
+        <!--<Tour />-->
 
         <!--
            - You can also use imported framework components directly in your markup!
